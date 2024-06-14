@@ -225,7 +225,7 @@ body {
 
 .buttons {
   width: 100%;
-  height: 40px;
+  height: 100%;
   background: #017bab;
   border: none;
   color: white;
@@ -256,4 +256,79 @@ body {
     font-style: normal;
   }
   
+}
+
+
+@keyframes un_efecto {
+0% {opacity: 0%;}
+10% {opacity: 10%;}
+20% {opacity: 20%;}
+30% {opacity: 30%;}
+40% {opacity: 40%;}
+50% {opacity: 50%;}
+60% {opacity: 60%;}
+70% {opacity: 70%;}
+80% {opacity: 80%;}
+90% {opacity: 90%;}
+100% {opacity: 100%;}
+}
+
+.footer-animacion{
+animation-name: un_efecto;
+animation-iteration-count: unset;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+
+}
+
+
+.zoom-in-out-box {
+ 
+  background: #f50057;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+.persona {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  color: purple;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.detalle {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .persona {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
