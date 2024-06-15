@@ -296,4 +296,8 @@ body {
   }
 }
 
+
+.card-text:last-child{
+  font-size: 30px;
+}
 /*# sourceMappingURL=styles.css.map */
